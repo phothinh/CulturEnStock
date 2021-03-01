@@ -8,7 +8,7 @@
          @endif
 
          @section('content')
-             CulturEnStock
+             <h1>CulturEnStock</h1
          @endsection
     </body>
 </html>

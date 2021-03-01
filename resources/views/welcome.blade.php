@@ -8,7 +8,7 @@
          @endif
 
          @section('content')
-             <h1>CulturEnStock</h1
+         {{ __('CulturEnStock') }}
          @endsection
     </body>
 </html>

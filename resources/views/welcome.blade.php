@@ -3,16 +3,12 @@
     @extends('head')
 
     <body>
-        <div>
-            @if (Route::has('login'))
-                @extends('nav')
-            @endif
+         @if (Route::has('login'))
+            @extends('nav')
+         @endif
 
-            <div class="content">
-                <div>
-                    CulturEnStock
-                </div>
-            </div>
-        </div>
+         @section('content')
+             CulturEnStock
+         @endsection
     </body>
 </html>

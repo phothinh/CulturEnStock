@@ -15,8 +15,14 @@
       <li><a href="#">Page 2</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="{{ route('register') }}" ><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="{{ route('login') }}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();">
+                                                        <span class="glyphicon glyphicon-log-out"></span> Log-out</a></li>
+
+    <form id="logout-form" action ="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+    </form>
+
     </ul>
   </div>
 </nav>

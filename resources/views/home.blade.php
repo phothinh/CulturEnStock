@@ -1,7 +1,7 @@
 @extends('layouts.app')
 <html>
 @extends('head')
-</html>
+
 
 <body>
 @extends('nav')
@@ -27,3 +27,4 @@
 </div>
 @endsection
 </body>
+</html>

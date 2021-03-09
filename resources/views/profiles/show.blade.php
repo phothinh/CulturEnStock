@@ -2,7 +2,7 @@
 @extends('head')
 
 @section('content')
-@extends('nav')
+@extends('navlogout')
 
 <div class="container">
     <div class="row">

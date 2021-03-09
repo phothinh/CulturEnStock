@@ -2,9 +2,7 @@
 @extends('head')
 
 @section('content')
-@if (Route::has('login'))
-    @extends('nav')
-@else
+@extends('nav')
 
 <div class="container">
     <div class="row">

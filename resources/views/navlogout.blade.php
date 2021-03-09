@@ -27,15 +27,15 @@
   </div>
 </nav> -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">CulturEnStock</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: 0px 1px 4px 0px lightgrey;">
+  <a class="navbar-brand" href="{{ url('/') }}">CulturEnStock</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="{{ url('/') }}">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ url('/home') }}">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">List</a>
@@ -44,7 +44,7 @@
         <a class="nav-link" href="{{ url('/profiles/owen') }}">Profile</a>
       </li>
     </ul>
-    <ul class="navbar-nav">
+    <ul class="navbar-nav ml-auto">
       <li class="nav-item active"><a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                         document.getElementById('logout-form').submit();">
                                                         <span class="glyphicon glyphicon-log-out"></span> Log-out</a></li>

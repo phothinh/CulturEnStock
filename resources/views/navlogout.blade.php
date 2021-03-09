@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<nav class="navbar navbar-expand-sm bg-light navbar-light" style="box-shadow: 0px 3px 4px 0px lightgrey;">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="{{ url('/') }}">CulturEnStock</a>

@@ -23,8 +23,8 @@
             </div>
 
             <div class="mt-3">
-                <div>Owen Guimar</div>
-                <div>Chef de projet</div>
+                <div>{{ $user->profile->title }}</div>
+                <div>{{ $user->profile->description }}</div>
             </div>
 
         </div>

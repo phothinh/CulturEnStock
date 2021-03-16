@@ -23,4 +23,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::get('/profiles/{user}', [App\Http\Controllers\ProfileController::class, 'show'])->name('profiles.show');
 
+Route::get('/posts/create', [App\Http\Controllers\PostController::class, 'create'])->name('posts.create');
+Route::post('/posts', [App\Http\Controllers\PostController::class, 'store'])->name('posts.store');
+
 

@@ -1,13 +1,9 @@
 @extends('layouts.app')
-@extends('head')
-@extends('navlogout')
 @section('content')
-
 
 <div class="container">
 
     <div class="row mt-4">
-
         <div class="col-4 text-center">
             <img src="https://moodle2.iut-acy.univ-savoie.fr/pluginfile.php/46267/user/icon/iut_annecy/f1?rev=1206261" class="rounded-circle">
         </div>
@@ -28,7 +24,14 @@
             </div>
 
         </div>
+    </div>
 
+    <div class="row mt-5">
+        @foreach ($user->posts as $post)
+        <div class="col-4">
+            <img src="{{ asset('storage') . '/' . $post->image }}" class="w-100">
+        </div>
+        @endforeach
     </div>
 
 </div>

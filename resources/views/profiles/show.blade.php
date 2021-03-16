@@ -15,7 +15,7 @@
         <div class="col-8">
 
             <div class="d-flex">
-                <div class="h4 mr-3 pt-2">owen_official</div>
+                <div class="h4 mr-3 pt-2">{{ $user->username }}</div>
             </div>
 
             <div class="d-flex mt-3">

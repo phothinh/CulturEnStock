@@ -15,4 +15,11 @@ class Profile extends Model
     {
         return $this->belongsTo('App\Models\User');
     }
+
+    public function getImage()
+    {
+        $imagePath = $this->image ?? 'avatars/default.png';
+
+        return asset('storage') . '/' . $imagePath;
+    }
 }

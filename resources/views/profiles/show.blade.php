@@ -5,7 +5,8 @@
 
     <div class="row mt-4">
         <div class="col-4 text-center">
-            <img src="https://moodle2.iut-acy.univ-savoie.fr/pluginfile.php/46267/user/icon/iut_annecy/f1?rev=1206261" class="rounded-circle">
+            <img src="{{ $user->profile->getImage() }}" class="rounded-circle w-100"
+            style="max-width: 200px;">
         </div>
 
         <div class="col-8">

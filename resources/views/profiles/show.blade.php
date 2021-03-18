@@ -15,8 +15,12 @@
             </div>
 
             <div class="d-flex mt-3">
-                <div class="mr-3"><strong>3</strong> publications</div>
+                <div class="mr-3"><strong>{{ $user->posts->count() }}</strong> publications</div>
             </div>
+
+            @can('update', $user->profile)
+            <a href="{{ route('profiles.edit', ['user' => $user->username]) }}" class="btn btn-outline-secondary mt-3">Modifier mes informations</a>
+            @endcan
 
             <div class="mt-3">
                 <div>{{ $user->profile->title }}</div>

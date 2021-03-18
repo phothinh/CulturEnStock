@@ -5,17 +5,28 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Créer un événement</div>
+                <div class="card-header">Modifier mes informations</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('posts.store') }}" enctype="multipart/form-data">
+                    <form method="POST" action="{{ route('profiles.update', ['user' => $user]) }}" enctype="multipart/form-data">
                         @csrf
+                        @method('PATCH')
+                        <div class="form-group">
+                            <label for="title">Titre</label>
+                            <input id="title" type="text" class="form-control @error('title') is-invalid @enderror" name="title" value="{{ old('title') ?? $user->profile->title }}" autocomplete="title" autofocus>
+
+                             @error('title')
+                                 <span class="invalid-feedback" role="alert">
+                                     <strong>{{ $message }}</strong>
+                                 </span>
+                             @enderror
+                        </div>
 
                         <div class="form-group">
-                            <label for="caption">Description</label>
-                            <input id="caption" type="text" class="form-control @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') }}" autocomplete="caption" autofocus>
+                            <label for="description">Description</label>
+                            <textarea id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" autocomplete="description" autofocus>{{ old('description') ?? $user->profile->description }}</textarea>
 
-                             @error('caption')
+                             @error('description')
                                  <span class="invalid-feedback" role="alert">
                                      <strong>{{ $message }}</strong>
                                  </span>
@@ -35,7 +46,7 @@
                         </div>
 
                         <button type="submit" class="btn btn-primary">
-                            Créer mon événement
+                            Modifier mes informations
                         </button>
 
                     </form>

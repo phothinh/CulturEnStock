@@ -18,31 +18,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    <script src="{{ mix('js/app.js') }}" defer></script>
 
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="box-shadow: 0px 1px 4px 0px lightgrey;">
-    <a class="navbar-brand" href="{{ url('/') }}">CulturEnStock</a>
+    <a class="navbar-brand" href="{{ url('/') }}">CULTURENSTOCK</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{{ url('/posts') }}">Événements</a>
+                <a class="nav-link" href="{{ url('/posts') }}">ÉVÉNEMENTS</a>
             </li>
         </ul>
 
         <ul class="nav navbar-nav ml-auto">
         @guest
             <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                <a class="nav-link" href="{{ route('login') }}">SE CONNECTER</a>
             </li>
             @if (Route::has('register'))
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                    <a class="nav-link" href="{{ route('register') }}">S'INSCRIRE</a>
                 </li>
             @endif
         @else
@@ -78,6 +77,6 @@
         </main>
     </div>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ mix('js/app.js') }}" defer></script>
 </body>
 </html>

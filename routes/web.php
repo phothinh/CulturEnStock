@@ -33,6 +33,8 @@ Route::get('/posts/{post}', [App\Http\Controllers\PostController::class, 'show']
 
 Route::get('/abonnements', [App\Http\Controllers\AbonnementController::class, 'show'])->name('abonnements.show');
 
+Route::get('/reserver', [App\Http\Controllers\ReserverController::class, 'show'])->name('reserver.show');
+
 
 
 

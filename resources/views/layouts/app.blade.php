@@ -32,6 +32,9 @@
             <li class="nav-item">
                 <a class="nav-link" href="{{ url('/posts') }}">ÉVÉNEMENTS</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ url('/abonnements') }}">ABONNEMENTS</a>
+            </li>
         </ul>
 
         <ul class="nav navbar-nav ml-auto">

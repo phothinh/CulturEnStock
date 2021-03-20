@@ -42,15 +42,15 @@
 					            12 €<br><br>
 
                 </p>
-                <p><strong>Pass' Culturel couple</strong><br><br>
+                <p><strong>Pass' Culturel couple</strong><br>
                                 (même adresse)<br>
 						        20 €<br><br>
                 </p>
-                <p><strong>Pass' Culturel jeune</strong><br><br>
+                <p><strong>Pass' Culturel jeune</strong><br>
                                 (- 18 ans et étudiant - 26 ans - adhésion offerte à partir du 2e enfant - demandeur d'emploi)<br>
 						        5 €<br><br>
                 </p>
-                <p><strong>Adhésion parrainée</strong><br><br>
+                <p><strong>Adhésion parrainée</strong><br>
                                 (réservée aux détenteurs des cartes Cézam et Loisirs et aux personnes dont l'entreprise est adhérente à la salle CulturEnStock, sur
                                 présentation d'un justificatif)<br>
 						        5 €<br><br>

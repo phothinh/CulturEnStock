@@ -12,10 +12,32 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="caption">Description</label>
+                            <label for="caption">Titre</label>
                             <input id="caption" type="text" class="form-control @error('caption') is-invalid @enderror" name="caption" value="{{ old('caption') }}" autocomplete="caption" autofocus>
 
                              @error('caption')
+                                 <span class="invalid-feedback" role="alert">
+                                     <strong>{{ $message }}</strong>
+                                 </span>
+                             @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="description">Description</label>
+                            <textarea id="description" type="text" class="form-control @error('description') is-invalid @enderror" name="description" autocomplete="description" autofocus></textarea>
+
+                             @error('description')
+                                 <span class="invalid-feedback" role="alert">
+                                     <strong>{{ $message }}</strong>
+                                 </span>
+                             @enderror
+                        </div>
+
+                        <div class="form-group">
+                            <label for="horaire">Horaire</label>
+                            <textarea id="horaire" type="text" class="form-control @error('horaire') is-invalid @enderror" name="horaire" autocomplete="horaire" autofocus></textarea>
+
+                             @error('horaire')
                                  <span class="invalid-feedback" role="alert">
                                      <strong>{{ $message }}</strong>
                                  </span>

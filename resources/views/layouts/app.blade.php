@@ -55,12 +55,12 @@
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                    <a href="{{ route('profiles.show', ['user' => auth()->user()]) }}" class="dropdown-item">Mon Profil</a>
+                    <a href="{{ route('profiles.show', ['user' => auth()->user()]) }}" class="dropdown-item">Mon profil</a>
                     <a href="{{ route('posts.create') }}" class="dropdown-item">Créer un événement</a>
                     <a class="dropdown-item" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                                     document.getElementById('logout-form'.submit();">
-                        {{ __('Logout') }}
+                        {{ __('Se déconnecter') }}
                     </a>
 
                     <form id="logout-form" action="{{ route('logout') }}" method="POST"
